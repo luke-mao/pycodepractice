@@ -1,12 +1,27 @@
-# React + Vite
+# Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The frontend uses the Vite Reactjs JavaScript template. 
 
-Currently, two official plugins are available:
+The UI library is `react-bootstrap`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The frontend is responsible for the user interface and user interaction with the website. The frontend is connected to the backend through API calls. The frontend is hosted on [http://localhost:3000](http://localhost:3000).
 
-## Expanding the ESLint configuration
+## Development Environment
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Please ensure the backend service is running before starting the frontend. The frontend will not work without the backend service running.
+
+```bash
+cd frontend # if you are not in the frontend folder
+
+npm install # install the dependencies
+
+npm run dev # start the frontend on http://localhost:3000
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## .env files
+
+The frontend uses `.env.development` to store the backend API URL. The default value is `http://localhost:9000`. You can change this value to other values if your backend is running on a different port or host. 
+
+When build the frontend for production, the `.env.production` file will be used. This file is not included in the repository. You can create this file by copying the `.env.development` file and changing the values as needed. The default value is `http://localhost:9000`. You can change this value to other values if your backend is running on a different port or host.
