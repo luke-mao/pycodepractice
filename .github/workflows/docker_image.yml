@@ -1,0 +1,41 @@
+name: Docker Image Test
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  docker-compose-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build frontend 
+        run: |
+          cd frontend 
+          npm install
+          npm run build:dev
+
+      - name: Set up Docker Compose
+        run: docker compose version
+
+      - name: Run docker-compose build
+        run: docker compose up --build -d
+
+      - name: Show running containers
+        run: docker ps -a
+
+      - name: Verify the container
+        run: |
+          sleep 10
+          docker logs $(docker ps -q --filter "name=backend")
+          docker logs $(docker ps -q --filter "name=frontend")
+
+      - name: Close containers
+        run: docker compose down

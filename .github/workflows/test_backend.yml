@@ -1,0 +1,35 @@
+name: Backend Tests
+
+on:
+  pull_request:
+    branches: 
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  run-pytest:
+    name: Run Pytest
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          cd backend
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest
+
+      - name: Run tests with Pytest
+        run: |
+          cd backend
+          pytest
