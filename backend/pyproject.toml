@@ -1,0 +1,10 @@
+[tool.black]
+exclude = '''
+.*/examples/compile-check/bad_[12]\.py$
+'''
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+filterwarnings = [
+  "ignore::DeprecationWarning"
+]

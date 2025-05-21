@@ -1,0 +1,94 @@
+[
+    {
+        "id": 1,
+        "title": "Two Sum",
+        "difficulty": "easy",
+        "topic": "hash_map"
+    },
+    {
+        "id": 2,
+        "title": "Palindrome Number",
+        "difficulty": "easy",
+        "topic": "other"
+    },
+    {
+        "id": 3,
+        "title": "Merge Sorted Arrays",
+        "difficulty": "easy",
+        "topic": "array"
+    },
+    {
+        "id": 4,
+        "title": "Maximum Depth of Binary Tree",
+        "difficulty": "easy",
+        "topic": "tree",
+        "status": "published"
+    },
+    {
+        "id": 5,
+        "title": "Valid Parentheses",
+        "difficulty": "easy",
+        "topic": "stack"
+    },
+    {
+        "id": 6,
+        "title": "Best Time to Buy and Sell Stock",
+        "difficulty": "easy",
+        "topic": "array"
+    },
+    {
+        "id": 7,
+        "title": "Climbing Stairs",
+        "difficulty": "easy",
+        "topic": "dynamic_programming"
+
+    },
+    {
+        "id": 8,
+        "title": "Remove Duplicates from Sorted Array",
+        "difficulty": "easy",
+        "topic": "array"
+    },
+    {
+        "id": 9,
+        "title": "Merge Two Sorted Lists",
+        "difficulty": "easy",
+        "topic": "linked_list"
+    },
+    {
+        "id": 10,
+        "title": "Fibonacci Number",
+        "difficulty": "easy",
+        "topic": "dynamic_programming"
+    },
+    {
+        "id": 11,
+        "title": "Longest Substring Without Repeating Characters",
+        "difficulty": "medium",
+        "topic": "hash_map"
+    },
+    {
+        "id": 12,
+        "title": "Longest Palindromic Substring",
+        "difficulty": "medium",
+        "topic": "string"
+    },
+    {
+        "id": 13,
+        "title": "3Sum",
+        "difficulty": "medium",
+        "topic": "array"
+    },
+    {
+        "id": 14,
+        "title": "Container With Most Water",
+        "difficulty": "hard",
+        "topic": "array"
+    },
+    {
+        "id": 15,
+        "title": "Integer to Roman",
+        "difficulty": "hard",
+        "topic": "other"
+    }
+]

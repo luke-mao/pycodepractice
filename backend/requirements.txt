@@ -1,0 +1,12 @@
+docker==7.1.0
+Flask
+Flask_Cors
+flask_restx
+flask_sqlalchemy
+SQLAlchemy
+openai==1.66
+python-dotenv
+faker>=37
+pytest
+black>=25
+gunicorn>=23

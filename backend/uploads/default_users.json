@@ -1,0 +1,58 @@
+[
+    {
+        "username": "Admin",
+        "email": "Admin@mail.com",
+        "password": "Abcd1234!",
+        "role": "admin",
+        "avatar": "avatar/img_admin.jpg"
+    },
+    {
+        "username": "Tom",
+        "email": "Tom@mail.com",
+        "password": "Abcd1234!",
+        "role": "user",
+        "avatar": "avatar/img1.jpg"
+    },
+    {
+        "username": "Alice",
+        "email": "Alice@mail.com",
+        "password": "Abcd1234!",
+        "role": "user",
+        "avatar": "avatar/img2.jpg"
+    },
+    {
+        "username": "John",
+        "email": "John@mail.com",
+        "password": "Abcd1234!",
+        "role": "user",
+        "avatar": "avatar/img3.jpg"
+    },
+    {
+        "username": "Emily",
+        "email": "Emily@mail.com",
+        "password": "Abcd1234!",
+        "role": "user",
+        "avatar": "avatar/img4.jpg"
+    },
+    {
+        "username": "Michael",
+        "email": "Michael@mail.com",
+        "password": "Abcd1234!",
+        "role": "user",
+        "avatar": "avatar/img5.jpg"
+    },
+    {
+        "username": "Jason",
+        "email": "Jason@mail.com",
+        "password": "Abcd1234!",
+        "role": "user",
+        "avatar": "avatar/img6.jpg"
+    },
+    {
+        "username": "Linda",
+        "email": "Linda@mail.com",
+        "password": "Abcd1234!",
+        "role": "user",
+        "avatar": "avatar/img7.jpg"
+    }
+]
