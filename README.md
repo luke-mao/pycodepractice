@@ -14,6 +14,25 @@ To support learning, PyCodePractice includes an integrated AI tutor powered by O
 
 Admins can create, test, and upload new coding problems using a structured offline template workflow. The backend features analytics for monitoring user activity, submission trends, and per-problem execution statistics. All core services — code execution, forum, user management, and AI messaging — are containerized using Docker and orchestrated via Docker Compose.
 
+## Website Features
+
+Admin:
+* login, logout
+* create, update, delete problems
+* deactivate / activate user accounts
+* see analytics on the submission, AI tutor usage, and time and memory usage of each problem
+* view & edit admin profile
+
+User:
+* login, logout, register
+* view problems, submit solutions
+* view submission ranking
+* view all submissions
+* post comments on problem forums
+* talk to AI tutor (gpt-4o mini model)
+* view & edit profile
+* view submission frequency plots
+
 ## Local Setup
 
 1. Git clone or download the code zip from [Github Link](https://github.com/luke-mao/pycodepractice)
@@ -38,6 +57,18 @@ Admins can create, test, and upload new coding problems using a structured offli
     docker-compose up --build --force-recreate
     ```
 
+4. Create the `.env` file with the `OPENAI_API_KEY` variable in the `backend` folder. This key is used to access the OpenAI `GPT-4o-mini` model. You can get the key from the OpenAI API platform. 
+
+    ```bash
+    # open a terminal and go to the backend folder
+    cd backend
+    echo "OPENAI_API_KEY=your_openai_api_key" > .env
+    ```
+
+    This `.env` file is excluded from the git tracking. So you need to create it manually. 
+
+    **Note**: In order to use the github actions, you also need to create a repository secret called `OPENAI_API_KEY` in the repo settings. You can do this by going to the repo settings -> secrets and variables -> actions -> new repository secret. The same api key can be used for both local and github actions.
+
 4. Check the `Docker Desktop`, wait until 2 services are up. 
 
     Then open the browser and go to [http://localhost:3000](http://localhost:3000).
@@ -53,25 +84,6 @@ Admins can create, test, and upload new coding problems using a structured offli
     | Emily | Emily@mail.com | Abcd1234! | User |
 
 The folder [./materials](./materials) has provided 2 sets of new challenge materials. The admin can upload the materials. 
-
-## Website Features
-
-Admin:
-* login, logout
-* create, update, delete problems
-* deactivate / activate user accounts
-* see analytics on the submission, AI tutor usage, and time and memory usage of each problem
-* view & edit admin profile
-
-User:
-* login, logout, register
-* view problems, submit solutions
-* view submission ranking
-* view all submissions
-* post comments on problem forums
-* talk to AI tutor (gpt-4o mini model)
-* view & edit profile
-* view submission frequency plots
 
 ## Development Setup
 
