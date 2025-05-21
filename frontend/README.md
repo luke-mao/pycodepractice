@@ -4,7 +4,7 @@ The frontend uses the Vite Reactjs JavaScript template.
 
 The UI library is `react-bootstrap`.
 
-The frontend is responsible for the user interface and user interaction with the website. The frontend is connected to the backend through API calls. The frontend is hosted on [http://localhost:3000](http://localhost:3000).
+The frontend is responsible for the user interface and user interaction with the website. The frontend is connected to the backend through API calls. The frontend is hosted on [http://localhost:5173](http://localhost:5173).
 
 ## Development Environment
 
@@ -15,10 +15,10 @@ cd frontend # if you are not in the frontend folder
 
 npm install # install the dependencies
 
-npm run dev # start the frontend on http://localhost:3000
+npm run dev # start the frontend on http://localhost:5173
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
 ## .env files
 

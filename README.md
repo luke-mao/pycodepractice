@@ -71,7 +71,7 @@ User:
 
 4. Check the `Docker Desktop`, wait until 2 services are up. 
 
-    Then open the browser and go to [http://localhost:3000](http://localhost:3000).
+    Then open the browser and go to [http://localhost:80](http://localhost:80).
 
 5. Some existing user accounts:
 
@@ -113,7 +113,7 @@ The folder [./materials](./materials) has provided 2 sets of new challenge mater
     python3 app.py
     ```
 
-5. Go to the frontend folder, and install the dependencies for the frontend. By using `npm run dev`, the frontend will be running on [http://localhost:3000](http://localhost:3000).
+5. Go to the frontend folder, and install the dependencies for the frontend. By using `npm run dev`, the frontend will be running on [http://localhost:5173](http://localhost:5173).
 
     ```bash
     cd frontend
