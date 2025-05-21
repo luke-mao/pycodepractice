@@ -1,0 +1,25 @@
+# build the backend services first, then the frontend
+services:
+  backend:
+    build:
+      context: backend
+    ports:
+      - "9000:9000"
+    volumes:
+      # allow the backend container to access the source code
+      # this is for the dind (docker-in-docker) service of the backend sandbox
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      # ensure the python code: docker.from_env() can access the docker daemon
+      - DOCKER_HOST=unix:///var/run/docker.sock
+    privileged: true
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: unless-stopped

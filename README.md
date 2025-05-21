@@ -12,6 +12,14 @@
     # build a python:3.10-slim-time image with the time module, this is for the backend sandbox
     docker build -t python:3.10-slim-time ./backend/examples/sandbox
 
+    # build the frontend under the development mode
+    cd frontend
+    npm install
+    npm run build:dev
+
+    # go back to the root folder
+    cd ..
+
     # run the docker compose
     docker-compose up --build --force-recreate
     ```

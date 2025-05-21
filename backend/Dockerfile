@@ -15,4 +15,6 @@ COPY . .
 EXPOSE 9000
 
 # Use gunicorn to serve the app in the production environment
-CMD ["gunicorn", "-b", "0.0.0.0:9000", "app:app"]
+# since we need to map the docker socket, 
+# so only one worker is used here to prevent race conditions
+CMD ["gunicorn", "-w", "1", "-b", "0.0.0.0:9000", "app:app"]
