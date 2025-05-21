@@ -1,5 +1,19 @@
 # PyCodePractice: A Leetcode-like Online Python Code Practice Platform
 
+![Frontend Vite ReactJS](https://img.shields.io/badge/Frontend-Vite_ReactJS-ff69b4.svg)
+![Backend Python Flask Restx](https://img.shields.io/badge/Backend-Flask_RESTX-red.svg)
+![Docker](https://img.shields.io/badge/Containerized-Docker-informational.svg)
+
+## Introduction
+
+PyCodePractice is a full-stack, LeetCode-style online Python coding platform designed for learning, practice, and performance analysis.
+
+The platform allows users to solve coding challenges through a browser-based editor, submit code, receive feedback on time and memory usage, and compare their submissions through a public leaderboard. Each submission is executed securely in a sandboxed Docker container with enforced time and memory limits.
+
+To support learning, PyCodePractice includes an integrated AI tutor powered by OpenAI’s GPT-4o mini model. The tutor guides users through step-by-step hints without giving away full solutions, encouraging logical thinking and independent problem solving.
+
+Admins can create, test, and upload new coding problems using a structured offline template workflow. The backend features analytics for monitoring user activity, submission trends, and per-problem execution statistics. All core services — code execution, forum, user management, and AI messaging — are containerized using Docker and orchestrated via Docker Compose.
+
 ## Local Setup
 
 1. Git clone or download the code zip from [Github Link](https://github.com/luke-mao/pycodepractice)
