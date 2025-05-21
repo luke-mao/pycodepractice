@@ -119,7 +119,7 @@ def sandbox_eval(submission_id):
             stdout=True,
             stderr=True,
             detach=True,
-            mem_limit="2g",
+            mem_limit="1g",
         )
 
         # Wait for it to finish and fetch logs

@@ -37,7 +37,7 @@ with tempfile.TemporaryDirectory() as temp_dir:
             stdout=True,
             stderr=True,
             detach=True,
-            mem_limit="2g",
+            mem_limit="1g",
         )
 
         # by using detach = True, needs to wait for the container to finish

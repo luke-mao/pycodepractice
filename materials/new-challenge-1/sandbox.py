@@ -22,7 +22,7 @@ with tempfile.TemporaryDirectory() as temp_dir:
     # run the docker container, capture the output
     # use: python 3.10-slim
     # cpu core limit: 1
-    # memory limit: 1GB
+    # memory limit: 2GB
     # mount the temporary directory to /app
     # command: python run.py
     # capture all the stdout and stderr,
