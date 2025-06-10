@@ -4,6 +4,8 @@
 ![Backend Python Flask Restx](https://img.shields.io/badge/Backend-Flask_RESTX-red.svg)
 ![Docker](https://img.shields.io/badge/Containerized-Docker-informational.svg)
 
+Deployment: [pycodepractice.lukemao.site](http://pycodepractice.lukemao.site/)
+
 ## Introduction
 
 PyCodePractice is a full-stack, LeetCode-style online Python coding platform designed for learning, practice, and performance analysis.
